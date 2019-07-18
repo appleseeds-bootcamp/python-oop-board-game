@@ -1,3 +1,4 @@
+from entities.game_board import GameBoard
 from entities.checkers.checkers_piece import CheckersPiece
 
 class CheckersGameBoard(GameBoard):
@@ -7,8 +8,8 @@ class CheckersGameBoard(GameBoard):
 
     def _pose_checkers_pieces(self):
         for i in range(len(self.board)):
-            for j in range(2):
-                board[i][j].current_piece = CheckersPiece("white")
+            for j in range(3):
+                self.board[i][j].current_piece = CheckersPiece("white")
 
-            for j in range(6, 8):
-                board[i][j].current_piece = CheckersPiece("black")
+            for j in range(5, 8):
+                self.board[i][j].current_piece = CheckersPiece("black")

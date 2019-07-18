@@ -10,3 +10,5 @@ class GameBoard:
             board.append([])
             for j in range(width):
                 board[i].append(Tile(i, j))
+        
+        return board

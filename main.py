@@ -1,2 +1,6 @@
+from entities.checkers.checkers_game_board import CheckersGameBoard
+
 if __name__ == "__main__":
-    pass
+    cb = CheckersGameBoard()
+
+    print(cb)
